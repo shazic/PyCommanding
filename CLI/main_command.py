@@ -1,6 +1,6 @@
-from argparse            import ArgumentParser
-from argumentscontroller import Arguments
-from logcontroller       import Logger
+from argparse import ArgumentParser
+from CLI.arguments import Arguments
+from CLI.logging import Logger
 
 __version__ = '0.1.1'
 
