@@ -5,11 +5,11 @@ from logcontroller       import Logger
 __version__ = '0.1.1'
 
 __all__ = [
-    'CommandController',
+    'MainCommand',
     'run'
 ]
 
-class CommandController():
+class MainCommand():
 
     ARGPARSE_KEYWORD_PARAMETERS = {
         "action",
@@ -84,4 +84,4 @@ class CommandController():
         Logger(loglevel, loginfo, logfile).log()
 
 def run(commandExecuterClass, argumentsClassList, commandDescription = None):
-    return CommandController(commandExecuterClass, argumentsClassList, commandDescription).execute()
+    return MainCommand(commandExecuterClass, argumentsClassList, commandDescription).execute()
